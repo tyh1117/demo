@@ -1,0 +1,225 @@
+.banner img {
+  width: 100%;
+}
+main {
+  padding-bottom: 85px;
+}
+.main-top {
+  height: 46px;
+  text-align: right;
+  padding-top: 25px;
+  border-bottom:1px solid #656565;
+}
+.main-top h4 {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  margin-right: 20px;
+}
+.main-top span {
+  font-size: 14px;
+  color: #747474;
+  cursor: pointer;
+}
+.main-top .active {
+  color: #ac6e71;
+}
+
+main  .content-left {
+  position: relative;
+}
+main  .content-left h3{
+  font-size: 23px;
+  display: block;
+  width: 121px;
+  height: 39px;
+  line-height: 39px;
+  border-bottom: 1px solid #656565;
+  text-align: center;
+  margin-bottom: 13px;
+  color: #333;
+}
+main  .content-left .line1 {
+  width: 1px;
+  height: 19px;
+  background-color: #656565;
+  position: absolute;
+  top: 0;
+}
+main  .content-left .line2 {
+  width: 1px;
+  height: 19px;
+  background-color: #656565;
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+main .content-left .line3 {
+  width: 1px;
+  height: 6px;
+  background-color: #656565;
+  position: absolute;
+  top: 35px;
+}
+main .nav {
+  border-left: 1px solid #656565;
+}
+main .nav>li p{
+  display: inline-block;
+  line-height: 47px;
+  width: 120px;
+  font-size: 17px;
+  text-align: left;
+  color: #333;
+  cursor: pointer;
+  padding-left: 5px;
+}
+main .nav>li span {
+  display: inline-block;
+  line-height: 47px;
+  color: #333;
+}
+main .nav>.active>p{
+  color: #b85c5d;
+}
+main .nav>.active>span{
+  color: #b85c5d;
+}
+.sub-ul {
+  display: none;
+}
+.sub-li {
+  font-size: 13px;  
+  color: #c1c1c1;
+  line-height: 32px;
+   margin-left: 10px;
+   cursor: pointer;
+}
+.sub-ul .active {
+  color: #b85c5d;
+  border-bottom: 1px solid #999;
+ 
+}
+
+
+/* 右边 */
+.content-right {
+  width: 960px;
+  display: none;
+}
+.content-right.active {
+  display: block;
+}
+.address {
+  width: 844px;
+  height: 368px;
+  border: 1px solid #666;
+  margin: 64px 0 64px 116px;
+  position: relative;
+}
+
+.address .bgc {
+  width: 242px;
+  height: 344px;
+  background-color: #666;
+  position: absolute;
+  top: -18px;
+  left: -60px;
+}
+.address img {
+  position: absolute;
+  top: -46px;
+  left: -98px;
+}
+.address .text {
+  margin: 47px 0 0 195px;
+}
+.address .text p {
+  width: 627px;
+  font-size: 12px;
+  color: #666;
+  line-height: 22px;
+  padding-bottom: 32px;
+  text-align: justify;
+}
+.address .title {
+  width: 194px;
+  height: 45px;
+  border: 1px solid #666;
+  border-top: none;
+  position: absolute;
+  top: -20px;
+  right: 236px;
+  background-color: #fff;
+  /* position: relative; */
+}
+.address .title1 {
+  width:100%;
+  height: 100%;
+  position: relative;
+}
+.address .title .line {
+  width: 26px;
+  height: 1px;
+  background-color: #666;
+  position: absolute;
+}
+.address .line-l {
+  top: 0;
+}
+.address .line-r {
+  top: 0;
+  right: 0;
+}
+.address .title h2 {
+  font-size: 22px;
+  color: #333;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left:-56px ;
+}
+.address .title p {
+  width: 140px;
+  font-size: 11px;
+  color: #676767;
+  position: absolute;
+  bottom: 9px;
+  left: 50%;
+  margin-left: -70px;
+}
+
+/* 滚动轮播 */
+main .banner {
+  width: 940px;
+  height: 205px;
+  overflow: hidden;
+  position: relative;
+}
+main .banner-img {
+  width: 2830px;
+  height: 100%;
+  transition: all 1s;
+}
+main .banner-img >div {
+  width: 940px;
+  display: inline-block;
+}
+main .banner-img img {
+  width: 260px;
+  height: 180px;
+  margin: 0px 25px;
+} 
+
+main .btn {
+  font-size: 26px;
+  position: absolute;
+  border: none;
+  background-color: none;
+  top: 50%;
+  margin-top: -10px;
+  cursor: pointer;
+}
+main .btn:nth-of-type(2) {
+  right: 0;
+}

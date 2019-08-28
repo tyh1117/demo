@@ -1,0 +1,45 @@
+.contact-us-nav span{
+  color: #333333
+}
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 30px;
+}
+.contact-us > div {
+  padding-left: 54px;
+  position: relative;
+}
+.contact-us > div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+.contact-us i {
+  display: inline-block;
+  width: 2px;
+  height: 9px;
+  background-color: #866961;
+}
+.contact-us h3 {
+  display: inline-block;
+  font-size: 18px;
+  color: #333;
+}
+.contact-us > div p:nth-child(3) {
+  font-size: 11px;
+  color: #999;
+  margin-top: 5px;
+}
+.contact-us > div p:nth-child(4) {
+  font-size: 13px;
+  color: #333;
+  margin-top: 32px;
+} 
+.contact-us > div p:nth-child(5) {
+  font-size: 11px;
+  color: #999;
+  margin-top: 13px;
+} 

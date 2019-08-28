@@ -1,0 +1,440 @@
+.banner {
+  position: relative;
+  width: 100%;
+  /* height: 434px; */
+  margin-bottom: 144px;
+}
+
+.banner img {
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: all 1s;
+}
+.banner .aaa .static {
+  position: static;
+  opacity: 0;
+}
+.banner .aaa .active {
+  opacity: 1;
+}
+.banner button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  outline: none;
+  font-size: 26px;
+  color: #fff;
+  border: #eee;
+  background-color: #000;
+  opacity: 0.1;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: 50%;
+  margin-top: -25px;
+  cursor: pointer;
+}
+.btnl {
+  left: 15px;
+}
+.btnr {
+  right: 15px;
+}
+.banner button:hover {
+  opacity: 0.6;
+}
+.banner ul {
+  position: absolute;
+  width: 40px;
+  text-align: center;
+  left: 50%;
+  margin-left: -20px;
+  bottom: 20px;
+}
+.banner li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+.banner ul .active {
+  background-color: #000;
+  opacity: 0.5;
+}
+/* 公司简介 */
+.about-conpany {
+  width: 1130px;
+  height: 470px;
+  border: 1px solid #850913;
+  position: relative;
+  margin-bottom: 96px;
+}
+.about-conpany img {
+  position: absolute;
+  left: 40px;
+  bottom: 33px;
+  z-index: 1;
+  transition: all 2s;
+}
+.about-conpany img:hover {
+  border-radius: 50%;
+}
+
+.about-conpany .content {
+  width: 680px;
+  height: 420px;
+  position: absolute;
+  top: 67px;
+  right: -73px;
+  background: #999999;
+  padding-left: 100px;
+  color: #fff;
+}
+.content-title {
+  padding: 35px 15px 10px 0;
+  font-size: 17px;
+}
+.content-title span:first-child {
+ padding-right: 17px;
+}
+.content-line {
+  font-size: 7px;
+
+}
+.content-line .line {
+  width: 574px;
+  height: 1px;
+  background-color: #fff;
+  display: inline-block;
+  position: relative;
+  top:-15px;
+  left: 7px;
+}
+ .about-conpany .content p {
+   font-size: 14px;
+   line-height: 20px;
+   padding: 10px 17px 10px 0;
+   text-align: justify;
+ }
+
+.about-conpany .title {
+  width: 216px;
+  height: 58px;
+  border: 1px solid #850913;
+  position: absolute;
+  top: -32px;
+  right: 106px;
+  background-color: #fff;
+  border-top: none;
+}
+.about-conpany .title-sub {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #333;
+}
+.about-conpany .title-sub h2 {
+  font-size: 22px;
+  position: absolute;
+  left: 50%;
+  margin-left: -45px;
+  top: -9px;
+}
+.about-conpany .title-sub p {
+font-size: 14px;
+position: absolute;
+left: 50%;
+margin-left: -60px;
+bottom: 15px;
+}
+.about-conpany .title-sub  div {
+  width: 46px;
+  height: 1px;
+  background-color: #850913;
+  position: absolute;
+}
+.about-conpany .title-sub .linel {
+  top: 3px;
+  left: 0;
+}
+.about-conpany .title-sub .liner {
+  top: 3px;
+  right: 0;
+}
+
+/* 拍摄基地 */
+
+.base {
+  height: 826px;
+  position: relative;
+  text-align: center;
+}
+.base-bgc {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background:url(../imgs/index-bgc.png) no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.title1 {
+  position: relative;
+  margin-bottom: 68px;
+}
+.title1 h2 {
+  font-size: 24px;
+  color: #333;
+  padding-top: 73px;
+  display: block;
+}
+ .title1 .line1 {
+  width: 118px;
+  height: 1px;
+  background-color: #850913;
+  position: absolute;
+  left: 50%;
+  margin-left: -59px;
+  bottom: -8px;
+}
+.base .content {
+  width: 100%;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  position: absolute;
+}
+.base .content > div{
+  width: 265px;
+  height: 520px;
+  float: left;
+}
+.base .content >div~div {
+margin-left: 30px;
+}
+
+.base .content-img {
+  height: 410px;
+  overflow: hidden;
+  transition: all 2s;
+  position: relative;
+}
+.base .content-img div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.base .content-text {
+  width: 100%;
+  height: 110px;
+  transition: all 2s;
+}
+
+.base .content-text h3 {
+  color: #333331;
+  font-size: 16px;
+  padding: 33px 0 10px 0;
+  transition: all 2s;
+}
+.base .content-text p {
+  font-size: 13px;
+  color: #666666;
+  line-height: 22px;
+  transition: all 2s;
+}
+.base .content-box {
+  position: relative;
+  
+}
+
+.base .content-box:hover .content-img {
+  background-color: #000;
+  opacity: 0.6;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.base .content-box:hover img {
+  height: 100%;
+  height: 100%;
+}
+.base .content-box:hover .content-text {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+.base .content-box:hover h3 {
+  color: #870914;
+}
+.base .content-box:hover p {
+  color: #fff;
+}
+
+.base .btn {
+  width: 150px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #a20a09;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  bottom: 58px;
+  left: 50%;
+  margin-left: -75px;
+}
+
+/* 真实客照 */
+
+.real {
+  text-align: center;
+}
+.real .content {
+  background-color: #a20a09;
+  position: relative;
+  height: 374px;
+}
+.real .content img {
+  position: absolute;
+  top: 25px;
+  left: 28px;
+  transition: all 2s;
+}
+.real .content img:hover {
+  border-radius: 50%;
+}
+.real .content-text {
+  width: 660px;
+  position: absolute;
+  right: 38px;
+}
+.real .content-title {
+  font-size: 15px;
+  color: #fff;
+  text-align: left;
+}
+.real .content-line {
+  text-align: left;
+  color: #fff;
+  position: relative;
+}
+.real .content-line span {
+  position: absolute;
+  top: -8px;
+}
+.real .content-line .line {
+  width: 650px;
+  position: absolute;
+  left: 7px;
+  top: -1px;
+}
+.real p{
+  font-size: 14px;
+  color: #fff;
+  text-align: justify;
+  margin-top: 40px;
+  line-height: 22px;
+}
+.real .btn {
+  width: 80px;
+  height: 22px;
+  line-height: 22px;
+  background-color: #fff;
+  color: #a20a09;
+  margin-top: 43px;
+}
+
+/* 选择摄影 */
+.choose-title {
+  margin-top: 125px;
+  height: 110px;
+  /* line-height: 110px; */
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.choose-title .choose-bg {
+  height: 100%;
+  width: 100%;
+  background: url(../imgs/choose-bg.jfif) no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.1;
+}
+.choose-title .title1 h2{
+  padding-top: 44px;
+}
+.choose-box {
+  width: 290px;
+  height: 526px;
+}
+.choose-box~.choose-box {
+  margin-left: 13px;
+}
+
+
+.choose-img {
+  height: 394px;
+  width: 100%;
+  overflow: hidden;
+
+}
+.choose-img img {
+  transition: all 2s;
+}
+.choose-text {
+  height: 133px;
+  text-align: left;
+  padding-top: 16px;
+  transition: all 2s;
+}
+.choose-text h3 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #5d5d5d;
+  transition: all 2s;
+}
+.choose-text p {
+  color: #9a9a9a;
+  font-size: 11px;
+  line-height: 22px;
+  text-align: justify;
+  margin-top: 10px;
+  transition: all 2s;
+}
+.choose-content {
+  position: relative;
+  padding-bottom: 105px;
+  height: 630px;
+  display: flex;
+  justify-content: space-between;
+}
+.choose-box:hover img {
+  transform: scale(1.5);
+}
+.choose-box:hover .choose-text {
+  background-color: #a20a09;
+  
+}
+.choose-box:hover h3 {
+  color: #fff;
+}
+.choose-box:hover p {
+  color: #fff;
+}
+
+.choose-content .btn {
+  width: 150px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #a20a09;
+  color: #fff;
+  font-size: 12px;
+  position: absolute; 
+  bottom: 22px;
+  left: 50%;
+  margin-left: -75px;
+  text-align: center;
+}

@@ -1,0 +1,93 @@
+.banner img {
+  width: 100%;
+}
+.content1 {
+  width: 1050px;
+  padding-left: 60px;
+  padding-top: 27px;
+}
+
+.content1~.content1 {
+  display: none;
+}
+
+.content1 .left {
+  width: 700px;
+}
+.content1 h3 {
+  font-size: 16px;
+  color: #343434;
+  padding-right: 15px;
+  display: inline-block;
+}
+.content1  span {
+  font-size: 11px;
+  color: #666666;
+}
+.content1 .left img,.line3 {
+  display: block;
+  margin: 5px 0 20px 0;
+}
+.content1 .left p {
+  font-size: 12px;
+  color: #656565;
+  line-height: 22px;
+  padding-bottom: 50px;
+  width: 687px;
+  text-align: justify;
+}
+
+.content1 .right {
+  width: 275px;
+  height: 293px;
+  overflow: hidden;
+}
+.content1 .right img {
+  transition: all 1s;
+}
+.content1 .right img:hover {
+  transform: scale(1.3);
+}
+.content1 .top {
+  width: 980px;
+}
+.bottom .imgbox{
+  width: 976px;
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+}
+.bottom .imgbox div{
+  width: 2100px;
+  left: 0;
+  position: absolute;
+  transition:  all 2s;
+}
+.bottom .imgbox img{
+   margin-right: 70px;
+}
+
+.lastbtn{
+  width: 100%;
+  text-align: center;
+  padding-top: 35px;
+}
+.lastbtn div{
+  display: inline-block;
+  width: 27px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: #999;
+  border: 1px solid #999;
+  font-size: 14px;
+  cursor: pointer;
+}
+.lastbtn span{
+  font-size: 14px;
+  color: #666666;
+  padding: 0 12px;
+}
+.lastbtn span.active{
+  color: #fe7764;
+}

@@ -1,0 +1,104 @@
+.banner img {
+  width: 100%;
+}
+
+
+
+/* 内容 */
+
+.grow {
+  padding-top: 45px;
+  /* display: none */
+}
+.grow .text {
+  width: 452px;
+  margin-left: 64px;
+}
+.grow .text h4 {
+  font-size: 15px;
+  color: #343434;
+  margin-bottom: 10px;
+}
+.grow .text p {
+  font-size: 11px;
+  line-height: 22px;
+  color: #747474;
+  padding: 14px 0 44px 0;
+  text-align: justify;
+}
+
+.grow .img {
+  width: 404px;
+  height: 541px;
+  border: 1px solid #747474;
+  margin-top: 64px;
+  margin-left: 25px;
+  position: relative;
+}
+.grow .img img {
+  position: absolute;
+  top: -55px;
+  left: 35px;
+  z-index: 1;
+}
+.grow .img div {
+  width: 80px;
+  height: 80px;
+  background: #666666;
+  position: absolute;
+  z-index: 0;
+  top: -80px;
+  right: -112px;
+}
+.brand {
+  margin-left: 54px;
+  display: none;
+}
+.brand > div {
+  width: 500px;
+  margin-top: 47px;
+  padding: 0 12px;
+}
+
+.brand h4 {
+  display: inline-block;
+  font-size: 16px;
+  color: #6e6e6e;
+  padding-right: 30px;
+  padding-bottom: 5px;
+}
+.brand span {
+  font-size: 12px;
+  color: #a1a1a1;
+}
+.brand p {
+  font-size: 13px;
+  line-height: 23px;
+  color: #a3a3a3;
+  padding: 20px 0 60px 0;
+}
+.lastimg {
+  width: 501px;
+  position: relative;
+  right: 10px;
+}
+.brand .culture {
+  width: 531px;
+  height: 191px;
+  background: #f3f3f3;
+  margin-top: 74px;
+  padding: 20px 10px;
+  position: relative;
+  z-index: 1;
+}
+.brand .culture p {
+  color: #656565;
+  padding: 10px 0 20px 0;
+}
+
+.brand .concept {
+  width: 440px;
+  overflow: hidden;
+  margin-left: 35px;
+  margin-top: 30px;
+}

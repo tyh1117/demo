@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/common.css">
+  
+  <link rel="stylesheet" href="./css/about-us-common.css">
+  <link rel="stylesheet" href="./css/contact-us.css">
+
+<style>
+#allmap {height: 336px;width:996px;overflow: hidden;}
+</style>
+
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=KvOMyz6GAM5dQm8d7alm4orp58HrdBei"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+
+</head>
+
+<body>
+  <header>
+    <div class="head center">
+      <h1 class="fl">
+        <img src="./img/logo.jpg" alt="">
+      </h1>
+      <div class="nav fr">
+        <a href="index.html" class="fl">首页</a>
+        <a href="about-us-newscenter.html" class="fl">关于我们</a>
+        <a href="product.html" class="fl">产品介绍</a>
+        <a href="team.html" class="fl">我们团队</a>
+        <a href="contact-us.html" class="active fl">联系我们</a>
+      </div>
+    </div>
+  </header>
+  <!-- 轮播 -->
+  <div class="banner">
+    <img src="./img/contact-us-banner.png" alt="">
+    <div class="banner-bgc"></div>
+    <div class="banner-text">
+      <span class="banner-text1">C</span>
+      <span class="banner-text2">ontact</span>
+      <i class="line1"></i>
+      <br>
+      <i class="line2"></i>
+      <span class="banner-text3">团队介绍</span>
+      <span class="banner-text4">Us</span>
+    </div>
+  </div>
+
+  <!-- 主要部分 -->
+  <main class="center">
+    <div class="main-title clearfix">
+      <nav class="fl clearfix">
+        <a href="#" class="fl">
+          <i></i>
+          <span>联系我们</span>
+          <p>Company profile</p>
+        </a>
+      </nav>
+      <div class="fr main-title-right">
+        <a href="#">
+          <span>当前位置></span>
+        </a>
+        <a href="#">
+          <span>首页></span>
+        </a>
+        <a href="#" class="contact-us-nav">
+          <span>联系我们</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div id="allmap">
+          <!-- <img src="./img/baidu-map.png" alt=""> -->
+      </div>
+     
+      <div class="contact-us">
+          <div>
+              <i></i>
+              <h3>资讯热线</h3>
+              <p>Information Hotline</p>
+              <p> 重庆：+86 023-867-7848</p>
+              <p>（09：30~18：30北京时间）</p>
+              <img src="./img/phone.jpg" alt="">
+            </div>
+            <div>
+                <i></i>
+                <h3>公司地址</h3>
+                <p>Company address</p>
+                <p>地址：重庆大坪龙湖时代天街3号写字楼2407室</p>
+                <p>（09：30~18：30北京时间）</p>
+                <img src="./img/address.jpg" alt="">
+            </div>
+            <div>
+              <i></i>
+                <h3>公司地址</h3>
+                <p>E-mail</p>
+                <p>地址：info@haitoulobal.com</p>
+                <p>（09：30~18：30北京时间）</p>
+                <img src="./img/email.jpg" alt="">
+            </div>
+        </div>
+      </div>  
+  </main>
+
+  <footer>
+    <div class="foot center">
+      <span>Copyright © 重庆duzu有限公司 | duzu备案 33010602001878 号 版权所有：重庆戈登有限公司</span>
+      <img src="./img/foot.jpg" alt="">
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    // 百度地图API功能
+      var map = new BMap.Map('allmap');
+      var poi = new BMap.Point(106.4912613060,29.5378179960);
+      map.centerAndZoom(poi, 16);
+      map.enableScrollWheelZoom();
+  
+      var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+                      '<img src="./img/logo.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+                      '地址：重庆市九龙坡区大西洋国际<br/>电话：(010)59928888<br/>简介：大西洋国际吧啦吧啦吧啦吧啦' +
+                    '</div>';
+  
+      //创建检索信息窗口对象
+      var searchInfoWindow = null;
+    searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+        title  : "大西洋国际",      //标题
+        width  : 290,             //宽度
+        height : 105,              //高度
+        panel  : "panel",         //检索结果面板
+        enableAutoPan : true,     //自动平移
+        searchTypes   :[
+          BMAPLIB_TAB_SEARCH,   //周边检索
+          BMAPLIB_TAB_TO_HERE,  //到这里去
+          BMAPLIB_TAB_FROM_HERE //从这里出发
+        ]
+      });
+      var marker = new BMap.Marker(poi); //创建marker对象
+      marker.enableDragging(); //marker可拖拽
+      marker.addEventListener("click", function(e){
+        searchInfoWindow.open(marker);
+      })
+      map.addOverlay(marker); //在地图中添加marker
+    
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.center {
+  width: 1200px;
+  margin: 0 auto;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: '';
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.clearfix{
+  zoom:1;
+} 

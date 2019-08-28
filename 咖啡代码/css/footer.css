@@ -1,0 +1,16 @@
+/* 底部 */
+footer {
+  height: 80px;
+  background-color: #866961;
+}
+.foot {
+  padding-left: 64px;
+  line-height: 64px;
+  color: #fff;
+}
+.foot span {
+  font-size: 12px;
+}
+.foot img {
+  margin-left: 180px;
+}

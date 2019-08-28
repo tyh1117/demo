@@ -1,0 +1,35 @@
+.main-content {
+  margin-bottom: 52px;
+}
+.main-content > div {
+  padding:26px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+.date {
+  padding: 0 10px;
+  text-align: center;
+}
+.date h3 {
+  font-size: 34px;
+  color: #866961;
+}
+.date span {
+  font-size: 10px;
+  color: #a9a9a9;
+  display: block;
+  margin-top: 10px;
+}
+.news p {
+  font-size: 16px;
+  line-height: 35px;
+  width: 905px;
+  padding: 0 17px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-left: 1px solid #f2f2f2;
+  color: #666666;
+}
+.news .active {
+  color: #866961;
+}

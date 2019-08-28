@@ -1,0 +1,21 @@
+header nav {
+  line-height: 80px;
+}
+header nav a {
+  font-size: 16px;
+  color: #333;
+  margin-left: 50px;
+  padding-bottom: 5px;
+}
+header nav a:hover {
+  color: #fc7861;
+  border-bottom: 2px solid #fc7861;
+  animation: bounceIn 2s;
+}
+header nav a.active {
+  color: #fc7861;
+  border-bottom: 2px solid #fc7861;
+}
+header {
+  animation: zoomIn 2s;
+}

@@ -1,0 +1,418 @@
+.banner img {
+  width: 100%;
+}
+.banner {
+  position: relative;
+}
+.banner .banner-img {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all 2s;
+}
+.banner .banner-img.active {
+  opacity: 1;
+}
+.banner .bgimg {
+  opacity: 0;
+}
+.banner ul {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 150px;
+  margin-left: -75px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.banner li {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 1s;
+}
+.banner li:hover {
+  background-color: #fff;
+}
+.banner li.active {
+  background-color: #fff;
+  width: 70px;
+}
+
+/* 关于我们 */
+.about-us {
+  padding-top: 75px;
+  margin-bottom: 51px;
+}
+.title {
+  width: 156px;
+  text-align: center;
+  position: relative;
+  margin-left: 240px;
+}
+.title h2{
+  font-size: 20px;
+  color: #323232;
+  padding-bottom: 10px;
+}
+.title span {
+  font-size: 11px;
+  color: #676767;
+}
+.title .line{
+  background-color: #666666;
+  position: absolute;
+}
+.title .line1 {
+  width: 18px;
+  height: 1px;
+  top: 0;
+}
+.title .line2 {
+  width: 1px;
+  height: 16px;
+  top: 0;
+  left: 2px;
+}
+.title .line3 {
+  width: 18px;
+  height: 1px;
+  right: 0;
+  top: 25px;
+}
+.title .line4 {
+  width: 1px;
+  height: 16px;
+  top: 10px;
+  right: 2px;
+}
+
+.about-us .left {
+  width: 600px;
+}
+
+.about-us .titlebox {
+  width: 100%;
+  border-left:1px solid #666666;
+  padding-bottom: 45px;
+}
+.about-us .content {
+  padding: 10px 20px 44px  5px;
+  position: relative;
+}
+.about-us .content > .line {
+  width: 170px;
+  height: 1px;
+  background-color: #666;
+  position: absolute;
+  bottom: 0;
+}
+.about-us p {
+  font-size: 13px;
+  color: #666666;
+  text-indent: 2em;
+  line-height: 22px;
+  text-align: justify;
+  padding-bottom: 42px;
+}
+
+.reading {
+  width: 128px;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  text-align: center;
+  margin-left: 230px;
+}
+.reading span {
+  font-size: 16px;
+  color: #e6746a;
+}
+.reading .line {
+  background-color: #666;
+  position: absolute;
+}
+.reading .line1 {
+  width: 1px;
+  height: 18px;
+  top: 5px;
+}
+.reading .line2 {
+  width: 1px;
+  height: 18px;
+  top: 5px;
+  right: 2px;
+}
+.reading .line3 {
+  width: 29px;
+  height: 1px;
+  top: 0;
+  right: 7px;
+}
+.reading .line4 {
+  width: 29px;
+  height: 1px;
+  bottom: 1px;
+  left: 7px;
+}
+
+.about-us .right {
+  width: 483px;
+  height: 558px;
+  border: 1px solid #666;
+  margin-top: 85px;
+  position: relative;
+}
+.about-us .right img {
+  position: absolute;
+  left: 50px;
+  top: -40px;
+  z-index: 1;
+}
+.about-us .right>div {
+  width: 120px;
+  height: 120px;
+  background-color: #999;
+  position: absolute;
+  top: -75px;
+  right: -100px;
+}
+
+/* 产品展示 */
+.pd {
+  position: relative;
+  height: 660px;
+}
+.productbox {
+  position: absolute;
+  width: 100%;
+  height: 660px;
+  background: url(../imgs/indexbg1.jpg);
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.pd .titlebox {
+ position: absolute;
+ overflow: hidden;
+ top: 0;
+ left: 50%;
+ margin-left: -600px;
+}
+.pd .titlebox > .title {
+  left: 50%;
+  margin: 22px 0 60px -78px;
+}
+
+.pd .content {
+  position: absolute;
+  top: 127px;
+  left: 50%;
+  margin-left: -600px;
+}
+
+.pd .content > div {
+  width: 582px;
+  height: 183px;
+  border:1px solid #999999;
+  margin-bottom: 24px;
+  padding: 5px;
+
+}
+.pd .content > div img{
+ width: 292px;
+ height: 170px;
+ transition: all 1s;
+ overflow: hidden;
+}
+
+.pd .content > div >div {
+  margin-left: 30px;
+  width: 217px;
+  height: 110px;
+  margin-top: 40px;
+  border-right:1px solid #ccc;
+  padding-right: 15px;
+}
+
+.pd .content > div >div h2 {
+  width: 78px;
+  font-size: 18px;
+  color: #686868;
+  border-bottom: 1px solid #686868;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+.pd .content > div >div p {
+  font-size: 13px;
+  color: #666666;
+  line-height: 23px;
+  margin-top: 24px;
+}
+.pd .content > div >div .en {
+  color: #e16357;
+  width: 155px;
+  display: none;
+}
+.pd .content > div:hover .en{
+  display: block;
+}
+.pd .content > div:hover .ch{
+  display: none;
+}
+.pd .content > div:hover img {
+  transform: scale(0.9);
+}
+
+.pd .reading {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -64px;
+  
+}
+
+.pd .reading span {
+color: #343434;
+}
+
+/* 设计团队 */
+.design {
+  margin-bottom: 40px;
+}
+.design .titlebox {
+  padding-top: 38px;
+  position: relative;
+  height: 110px;
+}
+.design .titlebox .title {
+  position: absolute;
+  left: 50%;
+  margin-left: -78px;
+}
+.design .person {
+  width: 243px;
+  margin-left: 75px;
+}
+.design .person:nth-of-type(1) {
+  margin-left: 0;
+}
+.design .person h3 {
+  font-size: 16px;
+  color: #494949;
+  text-align: center;
+  margin-top: 16px;
+  padding-bottom: 5px;
+  width: 60px;
+  border-bottom: 1px solid #666666;
+  margin-left: 87px;
+  transition: all 1s;
+}
+.design .person p {
+  width: 100%;
+  font-size: 12px;
+  line-height: 21px;
+  color: #676767;
+  margin-top: 20px;
+  padding: 0 5px;
+  text-align: justify;
+}
+
+.design .img {
+  width: 100%;
+  height: 334px;
+  overflow: hidden;
+  position: relative;
+  transition: all 1s;
+}
+
+.design .img div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* top: 0; */
+  top: -334px;
+  background-color: #000;
+  opacity: 0.5;
+  transition: all 1s;
+  font-size: 13px;
+  color: #fff;
+  padding: 120px 20px 0 20px;
+  line-height: 22px;
+}
+
+.middle-img {
+  height: 70px;
+  overflow: hidden;
+}
+.middle-img img{
+  width: 100%;
+  transition: all 2s;
+}
+.middle-img img:hover {
+  transform: scale(1.3);
+}
+
+/* 新闻动态 */
+.news {
+  margin-top: 26px;
+  padding-bottom: 60px;
+}
+.news .titlebox {
+  position: relative;
+  height: 82px;
+}
+ .news .title {
+  position: absolute;
+  left: 50%;
+  margin-left: -78px;
+}
+
+.news .content>div {
+width: 580px;
+margin-bottom: 44px;
+}
+.news .content span {
+  display: block;
+  width: 90px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  border: 1px solid #666666;
+  transition: all 1s;
+}
+
+.news .content span:nth-of-type(2) {
+  background-color: #666;
+  color: #fff;
+}
+
+.news .content h3 {
+  font-size: 14px;
+  padding: 0 0 15px 10px;
+  color: #343434;
+  cursor: pointer;
+  transition: all 1s;
+}
+.news .content p {
+  width: 480px;
+  font-size: 11px;
+  line-height: 22px;
+  color: #666666;
+  padding-left: 10px;
+}
+
+.news .reading span {
+  color: #343434;
+}
+.news .reading {
+  position: absolute;
+  left: 50%;
+  margin-left: -64px;
+}

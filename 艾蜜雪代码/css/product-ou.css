@@ -1,0 +1,48 @@
+.banner img {
+  width: 100%;
+}
+.center .small-nav .active {
+  color: #fc7861;
+}
+.contents {
+  width: 1010px;
+  padding-top: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contents .imgbox > div {
+  width: 2150px;
+  transition: all 1s;
+}
+.contents .imgbox > div > div {
+  margin-right: 60px;
+}
+.contents .imgbox > div > div p {
+  text-align: center;
+  font-size: 16px;
+  color: #494949;
+  padding: 14px 0 25px 0;
+}
+.botton {
+  width: 1010px;
+  text-align: center;
+}
+.botton div {
+  display: inline-block;
+  width: 22px;
+  line-height: 22px;
+  border: 1px solid #333;
+  margin: 0 12px;
+  font-size: 11px;
+  color: #333;
+  cursor: pointer;
+}
+.botton span {
+  font-size: 18px;
+  color: #333;
+  padding: 0 12px;
+}
+.botton span.active {
+  color: #fc7861;
+}

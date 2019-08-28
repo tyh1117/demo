@@ -1,0 +1,43 @@
+
+.search-box {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 17px;
+}
+.search {
+  width: 222px;
+  height: 25px;
+  border: 1px solid #333;
+  border-radius: 12.5px;
+  padding: 0 8px;
+}
+.search input {
+  height: 100%;
+  color: #999;
+}
+.search-btn {
+  width: 23px;
+  height: 100%;
+  background: url(../imgs/fangdajing.jpg) no-repeat center center;
+}
+.search-right {
+  margin-left: 37px;
+  color: #323232;
+  font-size: 17px;
+}
+
+nav > a {
+  display: inline-block;
+  font-size: 17px;
+  color: #333333;
+  padding: 27px 0 10px 0;
+  margin:0 0 29px 58px;
+ 
+}
+nav .active {
+  border-bottom: 2px solid #850913;
+}
+nav > a:hover {
+  border-bottom: 2px solid #850913;
+  text-decoration: none;
+}

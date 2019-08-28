@@ -1,0 +1,101 @@
+.main-title-right a:last-child{
+  color: #333;
+}
+.main-content {
+  margin-bottom: 37px;
+}
+.main-content > img {
+  width: 375px;
+  height: 600px;
+}
+.content-right {
+  width: 600px;
+}
+.introduce > h3 {
+  font-size: 14px;
+  color: #333;
+  padding: 4px 0 8px 0;
+}
+.introduce > span {
+  font-size: 11px;
+  color: #999;
+}
+.introduce > p {
+  font-size: 11px;
+  color: #999;
+  margin-top: 34px;
+  line-height: 24px;
+  text-indent: 2em;
+  text-align: justify;
+}
+.introduce-img {
+  margin-top: 54px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.introduce-img .btns {
+  transition: all 1s;
+}
+.introduce-img .img {
+  width: 145px;
+  height: 221px;
+  overflow: hidden;
+}
+.introduce-img img {
+  width: 100%;
+  height: 100%;
+}
+.introduce-img .content {
+  width: 145px;
+  height: 72px;
+  text-align: center;
+  padding: 19px 0;
+  color: #333;
+  line-height: 24px; 
+  font-size: 12px;
+  border-top: 1px solid #333;
+}
+.introduce-img .btns img{
+  transition: all 1s;
+  opacity: 0;
+}
+
+.position {
+  color: #7d7d7d;
+  display: none;
+}
+
+.introduce-img .active {
+  background: #333;
+}
+.introduce-img .active img {
+  opacity: 1;
+}
+.introduce-img .active .name {
+  color: #fff;
+}
+.introduce-img .active .english-name {
+  display: none;
+}
+.introduce-img .active .position {
+  display: block;
+}
+
+.introduce-img > .btns:hover {
+  background: #333;
+  text-decoration: none;
+}
+.introduce-img > .btns:hover .name {
+  color: #fff;
+}
+.introduce-img > .btns:hover .english-name {
+  display: none;
+}
+.introduce-img > .btns:hover .position {
+  display: block;
+}
+.introduce-img > .btns:hover img {
+  opacity: 1;
+  transform: scale(1.3);
+}
